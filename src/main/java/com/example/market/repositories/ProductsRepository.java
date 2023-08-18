@@ -42,11 +42,7 @@ public void init() {
     public List<Products> getProductsList() {
         return Collections.unmodifiableList(productsList);
     }
-    public Products findById(Long id) {
-        return productsList.stream().filter(s -> s.getId().equals(id))
-                .findFirst()
-                .orElseThrow(() -> new RuntimeException("Student not found by id: " + id));
-    }
+
 
 
 
