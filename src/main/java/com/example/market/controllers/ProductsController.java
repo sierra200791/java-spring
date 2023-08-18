@@ -22,13 +22,9 @@ private ProductsService productsService;
 
    }
 
+
+
     @GetMapping("/")
-    public String home(){
-        return "home";
-
-    }
-    @GetMapping("/products")
-
     public List<Products> productPage() {
         return productsService.findAll();
     }
